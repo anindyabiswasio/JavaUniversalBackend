@@ -61,7 +61,9 @@
         <h3>Description</h3>
         <div>
           
-            <p>Here is where all Requests Landup</p>
+            <p>Here is where all RestClient Requests Arrive.</p>
+
+<p>Planning to use spring boot and have anotations on each of these methods to accept HTTP/HTTPS Requests.</p>
           
         </div>
       </section>
@@ -137,6 +139,62 @@
 
       <!-- Operations -->
 
+      
+      <section>
+        <h3>Operations</h3>
+        <table class="table table-striped table-bordered">
+          <tr>
+            <th>Visibility</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="8ef2215e56c6ac5481e4691f93b84a75.html">authenticate()</a></td>
+            <td><p>All User Authentications are sent to this method. It will Authenticate against existing users in MongoDB.  DataBase and Collection is to be decided on a later date.</p></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="5bd2e29d9b2460109f90e60667cc2101.html">get()</a></td>
+            <td><p>All Document Request come here.  To fulfill a request we must first.</p>
+
+<ol><li>Run SecurityValidator to see if the Request can be fulfilled.</li><li>Get Document from MongoDB</li><li>Filter Out Parameters that requesting user has no right to access.</li></ol></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="dd79016f6a4b38e9412ced4c0ac7b96f.html">put()</a></td>
+            <td><p>All Document Write New Request come here.  To fulfill a request we must first.</p>
+
+<ol><li>Run SecurityValidator to see if the Request can be fulfilled.</li><li>Filter Out Parameters that requesting user has no right to put.</li><li>Check Parameters against Parameter format defined by Developer.</li></ol></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="90606fc037663a4d8f62469713a654d4.html">update()</a></td>
+            <td><p>All Document Update Request come here.  To fulfill a request we must first.</p>
+
+<ol><li>Run SecurityValidator to see if the Request can be fulfilled.</li><li>Filter Out Parameters that requesting user has no right to update.</li><li>Check Parameters against Parameter format defined by Developer.</li></ol></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="cad8ad1166d1db8ab0899c549a9cd5a7.html">delete()</a></td>
+            <td><p>All Document Delete Request come here.  To fulfill a request we must first.</p>
+
+<ol><li>Run SecurityValidator to see if the Request can be fulfilled.</li><li>Delete Document. Or Fail to do so.</li></ol></td>
+          </tr>
+          
+          <tr>
+            <td>public</td>
+            <td><a href="72cb68ab93b2e7589a6547d935c82239.html">registerUser()</a></td>
+            <td><p>TODO</p></td>
+          </tr>
+          
+        </table>
+      </section>
       
 
       <!-- Receptions -->
